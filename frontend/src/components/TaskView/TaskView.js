@@ -413,7 +413,7 @@ const TaskView = () => {
               )}
               <div>
                 {
-                  task && task.status === 'Done' && task.status === 'Delayed' || user.userRole !== 'Admin' ? null  :<form
+                  task && task.status !== 'Done' && task.status !== 'Delayed' || user.userRole === 'Admin' ? <form
                     className="status-progress"
                     onSubmit={(e) => handleStatusUpdate(e)}
                   >
@@ -450,7 +450,7 @@ const TaskView = () => {
                         Update
                       </Button>
                     </div>
-                  </form>
+                  </form> : null
                 }
               </div>
               <div className="button-spacearound">
