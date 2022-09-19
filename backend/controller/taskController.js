@@ -220,12 +220,9 @@ exports.getProductiveHours = async (req, res) => {
 
 exports.getDelayedTask = async (req, res) => {
   try {
-    var date = new Date();
-    var today = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
 
     let task = await Task.find({})
 
-    let newEndate;
 
     let arr = []
     task.forEach((i) => {
