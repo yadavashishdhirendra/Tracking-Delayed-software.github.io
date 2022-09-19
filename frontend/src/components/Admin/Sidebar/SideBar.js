@@ -10,6 +10,7 @@ import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Logo from "../../../Assets/Images/DiTech Logo DM_Final (1).png";
+import '../../../index.css'
 
 const routes = [
     {

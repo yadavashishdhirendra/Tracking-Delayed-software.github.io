@@ -13,6 +13,7 @@ import './Edittask.css'
 import AddCardIcon from "@mui/icons-material/AddCard";
 import { SpinnerCircular } from 'spinners-react';
 import { useAlert } from 'react-alert';
+import '../../index.css'
 
 const EditTask = () => {
     const dispatch = useDispatch();

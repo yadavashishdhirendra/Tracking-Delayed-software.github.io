@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 import Box from "@mui/material/Box";
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
+import '../../../index.css'
 
 const Task = () => {
     const navigate = useNavigate();

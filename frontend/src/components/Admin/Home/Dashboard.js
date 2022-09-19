@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import moment from 'moment'
 import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
+import '../../../index.css'
 
 const Dashboard = () => {
   const dispatch = useDispatch()

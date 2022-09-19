@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import '../../index.css'
 import {
   addCommentInTask,
   addHour,

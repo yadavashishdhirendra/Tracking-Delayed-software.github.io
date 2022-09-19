@@ -15,6 +15,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Tooltip } from "@mui/material";
+import '../../index.css'
 import Fade from "@material-ui/core/Fade";
 
 const UserProfile = () => {

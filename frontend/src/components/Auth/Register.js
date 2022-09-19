@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RegisterUser } from "../../Actions/userActions";
 import MetaData from "../Helmet/MetaData";
 import { useAlert } from "react-alert";
+import '../../index.css'
 
 const Register = () => {
   const alert = useAlert();

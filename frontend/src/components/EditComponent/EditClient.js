@@ -14,6 +14,7 @@ import { Link, useParams } from "react-router-dom";
 import { SpinnerCircular } from "spinners-react";
 import { Breadcrumbs, Typography } from "@mui/material";
 import { useAlert } from "react-alert";
+import '../../index.css'
 
 const EditClient = () => {
     const dispatch = useDispatch();

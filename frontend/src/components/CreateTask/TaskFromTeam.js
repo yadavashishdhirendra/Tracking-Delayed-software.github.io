@@ -12,6 +12,7 @@ import { getSingleClientTasks } from "../../Actions/clientActions";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserTasks, loadUser } from "../../Actions/userActions";
 import "./CreateTask.css";
+import '../../index.css'
 
 const TaskFromTeam = () => {
   const dispatch = useDispatch();

@@ -5,6 +5,7 @@ import CreateClient from "../CreateClient/CreateClient";
 import CreateList from "../DataCollections/ClientList";
 import Header from "../Header/Header";
 import TaskFromTeam from "../CreateTask/TaskFromTeam";
+import '../../index.css'
 
 const Home = () => {
   return (

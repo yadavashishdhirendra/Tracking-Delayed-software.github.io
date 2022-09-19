@@ -16,6 +16,7 @@ import {
 import { useAlert } from "react-alert";
 import { SpinnerCircular } from 'spinners-react';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import '../../index.css'
 
 const CreateList = () => {
   const alert = useAlert();

@@ -32,6 +32,7 @@ import { useAlert } from "react-alert";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import { SpinnerCircular } from "spinners-react";
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import '../../index.css'
 //  for select
 
 const style = {

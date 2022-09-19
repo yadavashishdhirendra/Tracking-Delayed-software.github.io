@@ -15,6 +15,7 @@ import SendIcon from "@mui/icons-material/Send";
 import { useDispatch, useSelector } from "react-redux";
 import { createClient, getOwnClients } from "../../Actions/clientActions";
 import { useAlert } from "react-alert";
+import '../../index.css'
 
 const style = {
   position: "absolute",

@@ -10,6 +10,7 @@ import Background from '../../Assets/Images/Rectangle 443.png'
 import SideBar from '../Admin/Sidebar/SideBar'
 import MetaData from '../Helmet/MetaData'
 import './TaskReport.css'
+import '../../index.css'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 const UserReportProfile = () => {
