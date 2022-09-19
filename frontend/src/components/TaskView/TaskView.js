@@ -413,7 +413,7 @@ const TaskView = () => {
               )}
               <div>
                 {
-                  task && task.status === 'Done' || task.status === 'Delayed' && user.userRole === 'User' ? null  :<form
+                  task && task.status === 'Done' && task.status === 'Delayed' || user.userRole !== 'Admin' ? null  :<form
                     className="status-progress"
                     onSubmit={(e) => handleStatusUpdate(e)}
                   >

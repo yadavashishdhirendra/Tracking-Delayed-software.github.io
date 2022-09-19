@@ -220,22 +220,27 @@ exports.getProductiveHours = async (req, res) => {
 
 exports.getDelayedTask = async (req, res) => {
   try {
-    let task = await Task.find({
-      $or: [
-        {
-          $and: [
-            { enddate: { $gte: new Date().toISOString } },
-            { enddate: { $lte: new Date().toISOString } },
-          ],    // and operator body finishes
-        },
-        {
-          status: "In Progress",
-        },
-        {
-          status: "Todo",
-        }
-      ],
-      // owner: req.user._id,
+    var date = new Date();
+    var today = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+
+    let task = await Task.find({})
+
+    let newEndate;
+
+    let arr = []
+    task.forEach((i) => {
+      i.enddate = moment(i.enddate).format('DD/MM/YYYY');
+      arr.push(i)
+    })
+
+    task = []
+    arr && arr.forEach((x) => {
+      if (x.enddate <= moment().format('DD/MM/YYYY') && x.status !== "Done") {
+        task.push(x)
+      }
+      else{
+        return null
+      }
     })
 
     let id = []
@@ -260,8 +265,7 @@ exports.getDelayedTask = async (req, res) => {
 
     return res.status(200).json({
       success: true,
-      task,
-      id
+      task
     });
   } catch (error) {
     res.status(500).json({
